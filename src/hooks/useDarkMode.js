@@ -14,7 +14,7 @@ const useDarkMode = (key, initialValue) => {
       document.body.classList.add('dark-mode');
     } 
     else {
-      document.body.classList.add('dark-mode');
+      document.body.classList.remove('dark-mode');
     }
   }, [darkModeEnabled]);
   return [ darkModeEnabled, setDarkModeEnabled, toggleDarkMode ]
